@@ -1,7 +1,32 @@
 :root {
+    /* Fuentes de letras y sus tamaños */
+
     --font-sans:'DM Sans', sans-serif;
 	--font-inter:'Inter', sans-serif;
     --light: 300;
     --normal: 500;
     --bold: 700;
+
+    /* Colores */
+
+    --color-primary: #f7931a;
+    --color-primary-soft: #ffe9d5;
+    --color-secondary: #1a9af7;
+    --color-secondary-soft: #e7f5ff;
+    --color-dark-warm: #201e1c;
+    --color-dark: #282623;
+    --color-ligt-darker: #bababa;
+    --color-background: #faf8f7;
+    --color-light: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
 }
