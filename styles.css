@@ -1,0 +1,7 @@
+:root {
+    --font-sans:'DM Sans', sans-serif;
+	--font-inter:'Inter', sans-serif;
+    --light: 300;
+    --normal: 500;
+    --bold: 700;
+}
