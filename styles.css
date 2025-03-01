@@ -44,13 +44,13 @@ header {
     background: linear-gradient(45deg,var(--color-primary), var(--color-dark-warm) 90%);
 }
 
-.logo {
-    width: 15.1rem;
-    height: 2.4rem;
-}
-
 .header-logo {
     margin: 3.9rem 8.5rem 0 8.4rem;
+}
+
+.header-logo img {
+    width: 15.1rem;
+    height: 2.4rem;
 }
 
 .header-text {
@@ -97,3 +97,17 @@ header a{
     box-shadow: 0 0.4rem 0.8rem 0 var(--color-shadow);
 }
 
+.section-change {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background);
+}
+
+.section-bitcoin {
+    margin: 5.8rem 6.4rem 0 6.4rem;
+}
+
+.section-bitcoin img {
+    width: 19.2rem;
+    height: 19.2rem;
+}
