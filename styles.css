@@ -18,6 +18,7 @@
     --color-ligt-darker: #bababa;
     --color-background: #faf8f7;
     --color-light: #fff;
+    --color-shadow: #59491E29;
 }
 
 * {
@@ -30,3 +31,64 @@ html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
 }
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32rem;
+    height: 31.4rem;
+    background: linear-gradient(45deg,var(--color-primary), var(--color-dark-warm) 90%);
+}
+
+.logo {
+    width: 15.1rem;
+    height: 2.4rem;
+}
+
+.header-logo {
+    margin: 3.9rem 8.5rem 0 8.4rem;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+    width: 28.8rem;
+    height: 13.8rem;
+    margin: 3.3rem 1.6rem 6.1rem;
+}
+
+h1 {
+    font-weight: var(--bold);
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--color-light);
+}
+
+.header-text p {
+    font-weight: var(--normal);
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--color-primary-soft);
+}
+
+.header-link {
+    position: absolute;
+    bottom: -1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.9rem;
+    height: 4.8rem;
+    background: var(--color-background);
+    text-decoration: none;
+    color: var(--color-dark-warm);
+    font-weight: var(--bold);
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.4rem 0.8rem 0 var(--color-shadow);
+}
+
