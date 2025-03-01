@@ -19,6 +19,7 @@
     --color-background: #faf8f7;
     --color-light: #fff;
     --color-shadow: #59491E29;
+    --color-gray: #BABABA;
 }
 
 * {
@@ -32,6 +33,10 @@ html {
     font-family: "DM Sans", sans-serif;
 }
 
+body {
+    width: 32rem;
+}
+
 /* Sección del header */
 
 header {
@@ -39,7 +44,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 32rem;
     height: 31.4rem;
     background: linear-gradient(45deg,var(--color-primary), var(--color-dark-warm) 90%);
 }
@@ -111,3 +115,26 @@ header a{
     width: 19.2rem;
     height: 19.2rem;
 }
+
+.section-text-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2.4rem;
+    width: 28.8rem;
+    height: 13rem;
+    margin: 4.4rem 1.5rem 0 1.7rem;
+}
+
+.section-text-content h2 {
+    font-weight: var(--bold);
+    font-size: 2.4rem;
+    color: var(--color-dark-warm);
+}
+
+.section-text-content p {
+    font-weight: var(--normal);
+    font-size: 1.4rem;
+    color: var(--color-gray);
+}
+
