@@ -191,7 +191,7 @@ header a{
 }
 
 .section-text-values {
-    margin: 0.5rem auto 0 auto; 
+    margin: 0.5rem auto 6.5rem auto; 
     text-align: center;
     font-family: var(--font-inter);
     width: 11.8rem;
@@ -205,4 +205,12 @@ header a{
 
 .section-text-values p > span{
     font-weight: var(--bold);
+}
+
+/* Sección de los beneficios de Batatabit */
+
+.section-benefits {
+    width: 32rem;
+    height: 91rem;
+    background-color: var(--color-dark-warm);
 }
