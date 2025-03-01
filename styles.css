@@ -138,3 +138,13 @@ header a{
     color: var(--color-gray);
 }
 
+.main-table {
+    display: flex;
+    width: 23.5rem;
+    height: 19.4rem;
+}
+
+.main-table-container {
+    width: 12rem;
+    height: 0.741rem;
+}
