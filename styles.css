@@ -183,8 +183,15 @@ header a{
     padding: 1.1rem 1.2rem;
 }
 
+.section-icon-arrow{
+    position: relative;
+    display: inline;
+    top: -85px; 
+    left: 291px;
+}
+
 .section-text-values {
-    margin: 1.6rem auto; 
+    margin: 0.5rem auto 0 auto; 
     text-align: center;
     font-family: var(--font-inter);
     width: 11.8rem;
