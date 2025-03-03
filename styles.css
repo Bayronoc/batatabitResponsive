@@ -209,8 +209,7 @@ header a{
 
 /* Sección de los beneficios de Batatabit */
 
-.section-benefits {
-    width: 32rem;
+.section-main-benefits {
     height: 91rem;
     background-color: var(--color-dark-warm);
 }
