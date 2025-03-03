@@ -266,6 +266,6 @@ header a{
 .section-cards-especifically p:nth-of-type(2) {
     font-weight: var(--normal);
     font-size: 1.4rem;
-    margin: 1rem 1.6rem 2.2rem 2rem;
+    margin: 1rem auto 2.2rem 2rem;
     color: var(--color-text-benefits);
 }
