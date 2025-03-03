@@ -22,6 +22,7 @@
     --color-gray: #BABABA;
     --color-text-benefits: #808080;
     --color-text-table: #B5B0AC;
+    --color-shadow-benefits: #1c1a19;
 }
 
 * {
@@ -244,6 +245,10 @@ header a{
     margin: 3.2rem 1.6rem 4rem 1.6rem;
 }
 
+.section-cards > div {
+    box-shadow: 0 0.4rem 0.8rem 0 var(--color-shadow-benefits); 
+}
+
 .section-cards-especifically {
     width: 28.8rem;
     height: 15.2rem;
@@ -265,7 +270,7 @@ header a{
 
 .section-cards-especifically p:nth-of-type(2) {
     font-weight: var(--normal);
-    font-size: 1.4rem;
-    margin: 1rem auto 2.2rem 2rem;
+    font-size: 1.39rem;
+    margin: 1rem 1.6rem 2.2rem 2rem;
     color: var(--color-text-benefits);
 }
