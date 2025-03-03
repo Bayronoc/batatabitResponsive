@@ -23,6 +23,7 @@
     --color-text-benefits: #808080;
     --color-text-table: #B5B0AC;
     --color-shadow-benefits: #1c1a19;
+    --color-text-plans: #757575;
 }
 
 * {
@@ -299,3 +300,20 @@ header a{
     background-color: var(--color-background);
 }
 
+.section-plans-text {
+    margin: 8.2rem 1.7rem 0 1.5rem;
+    text-align: center;
+}
+
+.section-plans-text h2 {
+    font-weight: var(--bold);
+    font-size: 2.4rem;
+    margin: 0 0 2.4rem 0;
+    color: var(--color-dark-warm);
+}
+
+.section-plans-text p {
+    font-weight: var(--normal);
+    font-size: 1.4rem;
+    color: var(--color-text-plans);
+}
