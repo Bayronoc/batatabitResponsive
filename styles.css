@@ -290,3 +290,12 @@ header a{
     margin: 6.4rem auto;
     color: var(--color-light);
 }
+
+/* Sección de los planes para comprar */
+
+.section-main-plans {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background);
+}
+
