@@ -274,3 +274,19 @@ header a{
     margin: 1rem 1.6rem 2.2rem 2rem;
     color: var(--color-text-benefits);
 }
+
+/* Sección con la imagen naranja de conócelo hoy */
+
+.section-main-orange {
+    display: flex;
+    height: 38.7rem;
+    background-image: url(./assets/images/image-orange.svg);
+}
+
+.section-main-orange p {
+    font-weight: var(--bold);
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 6.4rem auto;
+    color: var(--color-light);
+}
