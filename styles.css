@@ -457,3 +457,22 @@ header a{
 
 /* Footer de la página */
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    gap: 5.2rem;
+    background-color: var(--color-primary);  
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    list-style: none;
+    font-weight: var(--normal);
+    font-size: 1.4rem;
+    color: var(--color-light);
+}
