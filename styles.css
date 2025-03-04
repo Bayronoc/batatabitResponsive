@@ -16,7 +16,7 @@
     --color-dark-warm: #201e1c;
     --color-dark: #282623;
     --color-ligt-darker: #bababa;
-    --color-background: #faf8f7;
+    --color-background: #faf8f7; 
     --color-light: #fff;
     --color-shadow: #59491E29;
     --color-gray: #BABABA;
@@ -215,7 +215,6 @@ header a{
 .section-main-benefits {
     display: flex;
     flex-direction: column;
-    width: 32rem;
     height: 91rem;
     background-color: var(--color-dark-warm);
 }
@@ -295,8 +294,11 @@ header a{
 /* Sección de los planes para comprar */
 
 .section-main-plans {
+    position: relative;
     display: flex;
     flex-direction: column;
+    height: 49.1rem;
+    overflow: hidden;
     background-color: var(--color-background);
 }
 
@@ -318,12 +320,97 @@ header a{
     color: var(--color-text-plans);
 }
 
+.section-cards-efect {
+    position: absolute;
+    top: 21rem;
+    left: -43%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 58.6rem;
+    height: 40.9rem;
+    margin: 0 0 6.4rem 0;
+    gap: 0.8rem;
+}
+
 .section-plans-cards {
     position: relative;
     width: 19rem;
     height: 24.7rem;
     border-radius: 0.8rem;
     box-shadow: 0 0.4rem 0.8rem 0 var(--color-shadow);
-    margin: 5rem auto 0 auto;
+    margin: 5rem auto 6.4rem auto;
     background-color: var(--color-light);
+}
+
+.section-div-cards p:nth-of-type(1) {
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    top: -1.6rem;
+    right: 4.45rem;
+    width: 10.1rem;
+    height: 3.1rem;
+    border-radius: 0.8rem;
+    font-family: var(--font-inter);
+    font-weight: var(--bold);
+    font-size: 1.2rem;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.section-div-cards h2 {
+    display: flex;
+    justify-content: center;
+    margin: 3.1rem 5.8rem 0 5.9rem;
+    font-weight: normal;
+    font-size: 1.39rem;
+}
+
+.section-div-cards p:nth-of-type(2) {
+    position: relative;
+    left: 1.2rem;
+    gap: 1rem;
+    width: 7.8rem;
+    height: 6.3rem;
+    font-family: var(--font-inter);   
+    font-weight: var(--bold);
+    font-size: 5.2rem;
+    margin: 0.8rem auto 0 auto;
+}
+
+.section-div-cards p:nth-of-type(2) > span {
+    position: absolute;
+    bottom: 3.9rem;
+    right: 8.1rem; 
+    font-size: 1.2rem;
+    font-weight: var(--normal);
+    
+}
+
+.section-div-cards p:nth-of-type(3) {
+    width: 15.8rem;
+    height: 3rem;
+    text-align: center;
+    margin: 0.9rem auto 0 auto;
+    font-family: var(--font-inter);
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--color-text-plans);
+}
+
+.section-div-cards button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.6rem auto 0 auto;
+    width: 15.1rem;
+    height: 4.8rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid var(--color-primary);
+    background-color: var(--color-background);
+    color: var(--color-dark-warm);
+    
 }
