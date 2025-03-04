@@ -297,7 +297,7 @@ header a{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 49.1rem;
+    height: 52rem;
     overflow: hidden;
     background-color: var(--color-background);
 }
@@ -413,4 +413,44 @@ header a{
     background-color: var(--color-background);
     color: var(--color-dark-warm);
     
+}
+
+/* Sección de preguntas */
+
+.section-questions {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background);
+}
+
+.section-questions h2 {
+    width: 28.8rem;
+    height: 5.2rem;
+    margin: 6.4rem auto 0 auto;
+    font-weight: var(--bold);
+    font-size: 2.4rem;
+    color: var(--color-dark-warm);
+    text-align: center;
+}
+
+.section-questions-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 3.2rem auto 6.4rem auto;
+}
+
+.section-questions-list p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 28rem;
+    height: 3.6rem;
+    font-weight: var(--normal);
+    font-size: 1.4rem;
+    gap: 1.7rem;
+    color: var(--color-text-plans);
 }
