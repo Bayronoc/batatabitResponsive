@@ -488,9 +488,68 @@ footer {
     .header-text {
         gap: 3.4rem;
     }
-
+    
     /* section de la tasa de cambio */
     .section-text-content {
+        width: 340px;
+    }
+
+    .table-columns tr > td:nth-child(1){
+        width: 109px;
+    }
+    
+    .table-columns tr > td:nth-child(2){
+        width: 117px;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    /* Cambio de posición en los planes */
+
+    .section-cards-efect {
+        left: -28%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    /* section de la tasa de cambio */
+
+    .table-columns tr > td:nth-child(1){
+        width: 129px;
+    }
+    
+    .table-columns tr > td:nth-child(2){
+        width: 122px;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    /* Texto de la sección beneficios */
+
+    .section-text-benefits p {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Texto de la sección de planes */
+
+    .section-plans-text {
+        width: 400px;
+        margin: 8.2rem auto 0 auto;
+        text-align: center;
+    }
+    
+    .section-cards-efect {
+        left: -19%; 
+    }
+
+    /* Sección de preguntas */
+
+    .section-questions h2 {
+        width: 320px;
+    }
+
+    .section-questions-list p {
         width: 340px;
     }
 }
