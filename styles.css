@@ -483,6 +483,8 @@ footer {
 
 /* Media queries, diseño responsive */
 
+/* Mobile */
+
 @media screen and (min-width: 375px) {
     /* header de la página */
     .header-text {
@@ -551,5 +553,105 @@ footer {
 
     .section-questions-list p {
         width: 340px;
+    }
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) {
+    /* Header tamaños */
+
+    header {
+        height: 40rem;
+        justify-content: center;
+    }
+
+    .header-logo {
+        margin: 3.9rem auto 0 auto;
+    }
+
+    .header-logo img {
+        width: 174px;
+    }
+    
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4.2rem;
+    }
+    
+    .header-text p {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    /* Section de cambios */
+
+    .section-bitcoin img {
+        width: 19.5rem;
+        height: 19.5rem;
+    }
+    
+    .section-text-content {
+        width: 466px;
+    }
+    
+    .section-text-content h2 {
+        font-weight: var(--bold);
+        font-size: 4rem;
+        line-height: 4.2rem;
+        color: var(--color-dark-warm);
+    }
+    
+    .section-text-content p {
+        font-weight: var(--normal);
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: var(--color-gray);
+    }
+    
+    .table-title {
+        font-weight: var(--bold);
+        font-size: 1.8rem;
+        color: var(--color-primary);
+        margin: 8.8rem auto 1.2rem auto;
+    }
+    
+    .main-table {
+        position: relative;
+        margin: 0 auto 1.6rem auto;
+        font-family: var(--font-inter);
+        border-radius: 0.8rem;
+        background-color: var(--color-light);
+        color: var(--color-text-table);
+        border-collapse: collapse;
+    }
+    
+    .table-columns tr {
+        border-collapse: collapse;
+        border-bottom: 0.1rem solid var(--color-background);
+    }
+    
+    .table-columns tr:last-child {
+        border-bottom: 0;
+    }
+    
+    .table-columns tr > td:nth-child(1){
+        font-weight: var(--normal);
+        font-size: 1.6rem;
+        padding: 1rem 1.2rem;
+        border-right: 0.1rem solid var(--color-background);
+    }
+    
+    .table-columns tr > td:nth-child(2){
+        display: flex;
+        gap: 1rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        padding: 1.1rem 1.2rem;
+    }
+    
+    .section-icon-arrow{
+        visibility: hidden;
     }
 }
