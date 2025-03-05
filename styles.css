@@ -379,7 +379,9 @@ figure:nth-of-type(2) .section-text-values {
     background-color: var(--color-light);
 }
 
-.section-div-cards p:nth-of-type(1) {
+/* Tarjeta anual - normal */
+
+.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(1) {
     position: absolute;
     text-align: center;
     align-content: center;
@@ -395,7 +397,7 @@ figure:nth-of-type(2) .section-text-values {
     color: var(--color-light);
 }
 
-.section-div-cards h2 {
+.section-plans-cards:nth-of-type(1) .section-div-cards h2 {
     display: flex;
     justify-content: center;
     margin: 3.1rem 5.8rem 0 5.9rem;
@@ -403,7 +405,7 @@ figure:nth-of-type(2) .section-text-values {
     font-size: 1.39rem;
 }
 
-.section-div-cards p:nth-of-type(2) {
+.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(2) {
     position: relative;
     left: 1.2rem;
     gap: 1rem;
@@ -415,7 +417,7 @@ figure:nth-of-type(2) .section-text-values {
     margin: 0.8rem auto 0 auto;
 }
 
-.section-div-cards p:nth-of-type(2) > span {
+.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(2) > span {
     position: absolute;
     bottom: 3.9rem;
     right: 8.1rem; 
@@ -424,7 +426,7 @@ figure:nth-of-type(2) .section-text-values {
     
 }
 
-.section-div-cards p:nth-of-type(3) {
+.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(3) {
     width: 15.8rem;
     height: 3rem;
     text-align: center;
@@ -435,7 +437,155 @@ figure:nth-of-type(2) .section-text-values {
     color: var(--color-text-plans);
 }
 
-.section-div-cards button {
+.section-plans-cards:nth-of-type(1) .section-div-cards button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.6rem auto 0 auto;
+    width: 15.1rem;
+    height: 4.8rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid var(--color-primary);
+    background-color: var(--color-background);
+    color: var(--color-dark-warm);
+    
+}
+
+/* Tarjeta principal - precio recomendado */
+
+.section-plans-cards:nth-of-type(2) .section-div-cards p:nth-of-type(1) {
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    top: -1.6rem;
+    right: 4.45rem;
+    width: 10.1rem;
+    height: 3.1rem;
+    border-radius: 0.8rem;
+    font-family: var(--font-inter);
+    font-weight: var(--bold);
+    font-size: 1.2rem;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.section-plans-cards:nth-of-type(2) .section-div-cards h2 {
+    display: flex;
+    justify-content: center;
+    margin: 3.1rem 5.8rem 0 5.9rem;
+    font-weight: normal;
+    font-size: 1.39rem;
+}
+
+.section-plans-cards:nth-of-type(2) .section-div-cards p:nth-of-type(2) {
+    position: relative;
+    left: 1.2rem;
+    gap: 1rem;
+    width: 7.8rem;
+    height: 6.3rem;
+    font-family: var(--font-inter);   
+    font-weight: var(--bold);
+    font-size: 5.2rem;
+    margin: 0.8rem auto 0 auto;
+}
+
+.section-plans-cards:nth-of-type(2) .section-div-cards p:nth-of-type(2) > span {
+    position: absolute;
+    bottom: 3.9rem;
+    right: 8.1rem; 
+    font-size: 1.2rem;
+    font-weight: var(--normal);
+    
+}
+
+.section-plans-cards:nth-of-type(2) .section-div-cards p:nth-of-type(3) {
+    width: 15.8rem;
+    height: 3rem;
+    text-align: center;
+    margin: 0.9rem auto 0 auto;
+    font-family: var(--font-inter);
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--color-text-plans);
+}
+
+.section-plans-cards:nth-of-type(2) .section-div-cards button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.6rem auto 0 auto;
+    width: 15.1rem;
+    height: 4.8rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid var(--color-primary);
+    background-color: var(--color-background);
+    color: var(--color-dark-warm);
+    
+}
+
+/* Tarjeta de por vida */
+
+.section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(1) {
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    top: -1.6rem;
+    right: 4.45rem;
+    width: 10.1rem;
+    height: 3.1rem;
+    border-radius: 0.8rem;
+    font-family: var(--font-inter);
+    font-weight: var(--bold);
+    font-size: 1.2rem;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.section-plans-cards:nth-of-type(3) .section-div-cards h2 {
+    display: flex;
+    justify-content: center;
+    margin: 3.1rem 5.8rem 0 5.9rem;
+    font-weight: normal;
+    font-size: 1.39rem;
+}
+
+.section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(2) {
+    position: relative;
+    left: 1.2rem;
+    gap: 1rem;
+    width: 7.8rem;
+    height: 6.3rem;
+    font-family: var(--font-inter);   
+    font-weight: var(--bold);
+    font-size: 5.2rem;
+    margin: 0.8rem auto 0 auto;
+}
+
+.section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(2) > span {
+    position: absolute;
+    bottom: 3.9rem;
+    right: 8.1rem; 
+    font-size: 1.2rem;
+    font-weight: var(--normal);
+    
+}
+
+.section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(3) {
+    width: 15.8rem;
+    height: 3rem;
+    text-align: center;
+    margin: 0.9rem auto 0 auto;
+    font-family: var(--font-inter);
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--color-text-plans);
+}
+
+.section-plans-cards:nth-of-type(3) .section-div-cards button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -748,13 +898,7 @@ footer {
     }
     
     .section-plans-cards {
-        position: relative;
-        width: 19rem;
-        height: 24.7rem;
-        border-radius: 0.8rem;
-        box-shadow: 0 0.4rem 0.8rem 0 var(--color-shadow);
         margin: 0 auto;
-        background-color: var(--color-light);
     }
     
     .section-div-cards p:nth-of-type(1) {
