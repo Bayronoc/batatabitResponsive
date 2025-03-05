@@ -146,11 +146,30 @@ header a{
     color: var(--color-gray);
 }
 
-.table-title {
+figure:nth-of-type(1) .table-title {
     font-weight: var(--bold);
     font-size: 1.8rem;
     color: var(--color-primary);
-    margin: 4.8rem auto 1.2rem auto;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+    margin-top: 4.8rem;
+    text-align: start;
+}
+
+figure:nth-of-type(2) .table-title {
+    font-weight: var(--bold);
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+    text-align: start;
+}
+
+figure:nth-of-type(2) {
+    /* Estilos para el responsive */
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
 
 .main-table {
@@ -194,8 +213,8 @@ header a{
     bottom: -135px;
 }
 
-.section-text-values {
-    margin: 0.5rem auto 6.5rem auto; 
+figure:nth-of-type(1) .section-text-values {
+    margin: 1.6rem auto 6.5rem auto; 
     text-align: center;
     font-family: var(--font-inter);
     width: 11.8rem;
@@ -207,7 +226,20 @@ header a{
     font-size: 1.2rem;
 }
 
-.section-text-values p > span{
+figure:nth-of-type(2) .section-text-values {
+    margin: 1.6rem 0 6.5rem 0; 
+    text-align: start;
+    font-family: var(--font-inter);
+    width: 11.8rem;
+    height: 3.1rem;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+    background-color: var(--color-secondary-soft);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.section-text-values span{
     font-weight: var(--bold);
 }
 
@@ -609,49 +641,43 @@ footer {
         line-height: 2.4rem;
         color: var(--color-gray);
     }
-    
-    .table-title {
-        font-weight: var(--bold);
-        font-size: 1.8rem;
-        color: var(--color-primary);
-        margin: 8.8rem auto 1.2rem auto;
+
+    figure:nth-of-type(1) .table-title {
+        margin-top: auto;
+
     }
-    
-    .main-table {
-        position: relative;
-        margin: 0 auto 1.6rem auto;
-        font-family: var(--font-inter);
-        border-radius: 0.8rem;
-        background-color: var(--color-light);
-        color: var(--color-text-table);
-        border-collapse: collapse;
-    }
-    
-    .table-columns tr {
-        border-collapse: collapse;
-        border-bottom: 0.1rem solid var(--color-background);
-    }
-    
-    .table-columns tr:last-child {
-        border-bottom: 0;
-    }
-    
-    .table-columns tr > td:nth-child(1){
-        font-weight: var(--normal);
-        font-size: 1.6rem;
-        padding: 1rem 1.2rem;
-        border-right: 0.1rem solid var(--color-background);
-    }
-    
-    .table-columns tr > td:nth-child(2){
+
+    .section--table-position {
         display: flex;
-        gap: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2.2rem;
+        margin: 10rem auto 4rem auto;
+    }
+    
+    figure:nth-of-type(2) {
+        /* Estilos para el responsive */
+        visibility: visible;
+        width: auto;
+        height: auto;
+    }
+
+    figure:nth-of-type(1) .section-text-values {
+        margin: 1.6rem 0 6.5rem 0; 
+        text-align: center;
+        font-family: var(--font-inter);
+        width: 11.8rem;
+        height: 3.1rem;
+        border-radius: 0.8rem;
+        padding: 0.8rem;
+        background-color: var(--color-primary-soft);
         font-weight: 400;
-        font-size: 1.4rem;
-        padding: 1.1rem 1.2rem;
+        font-size: 1.2rem;
     }
     
     .section-icon-arrow{
         visibility: hidden;
     }
+
+    /* Sección de beneficios */
 }
