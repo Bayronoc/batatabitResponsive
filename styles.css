@@ -130,7 +130,6 @@ header a{
     flex-direction: column;
     text-align: center;
     gap: 2.4rem;
-    width: 28.8rem;
     height: 13rem;
     margin: 4.4rem auto 0 auto;
 }
@@ -484,3 +483,14 @@ footer {
 
 /* Media queries, diseño responsive */
 
+@media screen and (min-width: 375px) {
+    /* header de la página */
+    .header-text {
+        gap: 3.4rem;
+    }
+
+    /* section de la tasa de cambio */
+    .section-text-content {
+        width: 340px;
+    }
+}
