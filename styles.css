@@ -71,7 +71,7 @@ header {
     margin: 3.3rem 1.6rem 6.1rem;
 }
 
-h1 {
+.header-text h1 {
     font-weight: var(--bold);
     font-size: 2.4rem;
     text-align: center;
@@ -210,7 +210,7 @@ figure:nth-of-type(2) {
     position: absolute;
     display: inline;
     right: 26px;
-    bottom: -135px;
+    bottom: 14px;
 }
 
 figure:nth-of-type(1) .section-text-values {
@@ -709,6 +709,10 @@ footer {
         justify-content: center;
     }
 
+    .section--table-position {
+
+    }
+
     /* Cambio de posición en los planes */
 
     .section-cards-efect {
@@ -847,7 +851,7 @@ footer {
     }
     
     .section-icon-arrow{
-        visibility: hidden;
+        display: none;
     }
 
     /* Sección de beneficios */
