@@ -381,6 +381,10 @@ figure:nth-of-type(2) .section-text-values {
 
 /* Tarjeta anual - normal */
 
+.section-plans-cards:nth-of-type(1) .section-div-cards {
+    visibility: hidden;
+}
+
 .section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(1) {
     position: absolute;
     text-align: center;
@@ -395,6 +399,7 @@ figure:nth-of-type(2) .section-text-values {
     font-size: 1.2rem;
     background-color: var(--color-primary);
     color: var(--color-light);
+    visibility: hidden;
 }
 
 .section-plans-cards:nth-of-type(1) .section-div-cards h2 {
@@ -407,13 +412,14 @@ figure:nth-of-type(2) .section-text-values {
 
 .section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(2) {
     position: relative;
-    left: 1.2rem;
+    left: 2.2rem;
     gap: 1rem;
     width: 7.8rem;
     height: 6.3rem;
     font-family: var(--font-inter);   
     font-weight: var(--bold);
     font-size: 5.2rem;
+    color: var(--color-gray);
     margin: 0.8rem auto 0 auto;
 }
 
@@ -423,7 +429,6 @@ figure:nth-of-type(2) .section-text-values {
     right: 8.1rem; 
     font-size: 1.2rem;
     font-weight: var(--normal);
-    
 }
 
 .section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(3) {
@@ -447,10 +452,15 @@ figure:nth-of-type(2) .section-text-values {
     width: 15.1rem;
     height: 4.8rem;
     border-radius: 0.4rem;
-    border: 0.2rem solid var(--color-primary);
-    background-color: var(--color-background);
-    color: var(--color-dark-warm);
+    border: 0.2rem solid var(--color-gray);
+    font-weight: var(--bold);
+    background-color: var(--color-light);
+    color: var(--color-gray);
     
+}
+
+.section-plans-cards:nth-of-type(1) .section-div-cards button > img {
+    filter: invert(72%) brightness(85%) grayscale(100%);
 }
 
 /* Tarjeta principal - precio recomendado */
@@ -529,6 +539,10 @@ figure:nth-of-type(2) .section-text-values {
 
 /* Tarjeta de por vida */
 
+.section-plans-cards:nth-of-type(3) .section-div-cards {
+    visibility: hidden;
+}
+
 .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(1) {
     position: absolute;
     text-align: center;
@@ -543,12 +557,13 @@ figure:nth-of-type(2) .section-text-values {
     font-size: 1.2rem;
     background-color: var(--color-primary);
     color: var(--color-light);
+    visibility: hidden;
 }
 
 .section-plans-cards:nth-of-type(3) .section-div-cards h2 {
     display: flex;
     justify-content: center;
-    margin: 3.1rem 5.8rem 0 5.9rem;
+    margin: 3.1rem auto 0 auto;
     font-weight: normal;
     font-size: 1.39rem;
 }
@@ -563,6 +578,7 @@ figure:nth-of-type(2) .section-text-values {
     font-weight: var(--bold);
     font-size: 5.2rem;
     margin: 0.8rem auto 0 auto;
+    color: var(--color-gray);
 }
 
 .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(2) > span {
@@ -595,10 +611,15 @@ figure:nth-of-type(2) .section-text-values {
     width: 15.1rem;
     height: 4.8rem;
     border-radius: 0.4rem;
-    border: 0.2rem solid var(--color-primary);
-    background-color: var(--color-background);
-    color: var(--color-dark-warm);
+    border: 0.2rem solid var(--color-gray);
+    font-weight: var(--bold);
+    background-color: var(--color-light);
+    color: var(--color-gray);
     
+}
+
+.section-plans-cards:nth-of-type(3) .section-div-cards button > img {
+    filter: invert(72%) brightness(85%) grayscale(100%);
 }
 
 /* Sección de preguntas */
@@ -901,75 +922,208 @@ footer {
         margin: 0 auto;
     }
     
-    .section-div-cards p:nth-of-type(1) {
-        position: absolute;
-        text-align: center;
-        align-content: center;
-        top: -1.6rem;
-        right: 4.45rem;
-        width: 10.1rem;
-        height: 3.1rem;
-        border-radius: 0.8rem;
-        font-family: var(--font-inter);
+    .section-plans-cards:nth-of-type(1) .section-div-cards {
+        visibility: visible;
+    }
+
+    .section-plans-cards:nth-of-type(2) .section-div-cards button {
         font-weight: var(--bold);
-        font-size: 1.2rem;
-        background-color: var(--color-primary);
-        color: var(--color-light);
+    }
+
+    .section-plans-cards:nth-of-type(3) .section-div-cards {
+        visibility: visible;
+    }
+
+    /* Sección de preguntas */
+    
+    .section-questions h2 {
+        width: 46.6rem;
+        font-size: 4rem;
+        line-height: 4.2rem;
     }
     
-    .section-div-cards h2 {
-        display: flex;
-        justify-content: center;
-        margin: 3.1rem 5.8rem 0 5.9rem;
-        font-weight: normal;
-        font-size: 1.39rem;
+    .section-questions-list {
+        gap: 2.6rem;
+        margin: 8rem auto 6.4rem auto;
     }
     
-    .section-div-cards p:nth-of-type(2) {
-        position: relative;
+    .section-questions-list p {
+        width: 46rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        gap: 3rem;
+    }
+
+    /* Footer de la página */
+
+    footer {
+        height: 24rem;
+        gap: 18.3rem;
+    }
+    
+    .footer-list {
+        gap: 3rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    footer img {
+        width: 16.68rem;
+        height: 11.12rem;
+    }
+}
+
+/* Computador */
+
+@media screen and (min-width: 1024px) {
+    /* Sección de beneficios */
+
+    .section-cards-especifically {
+        width: 491px;
+    }
+
+    /* Sección de planes */
+
+    .section-main-plans {
+        height: 70rem;
+    }
+    
+    .section-cards-efect {
+        top: 27rem;
+        left: 9%;
+    }
+    
+    .section-plans-cards {
+        width: 27rem;
+        height: 29.7rem;
+    }
+
+    /* Sección de planes - tarjetas */
+
+    /* Tarjeta normal anual */
+
+    .section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(1) {
+        right: 6.45rem;
+        width: 14rem;
+        height: 3.5rem;
+    }
+
+    .section-plans-cards:nth-of-type(1) .section-div-cards h2 {
+        font-size: 1.7rem;
+    }
+    
+    .section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(2) {
+        left: 3rem;
+        width: 9.8rem;
+        font-size: 7rem;
+    }
+    
+    .section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(2) > span {
+        bottom: 2.9rem;
+        right: 11.1rem;
+        font-size: 2rem;  
+    }
+    
+    .section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(3) {
+        width: 25.8rem;
+        margin: 3rem auto 0 auto;
+        font-size: 1.7rem;
+    }
+    
+    .section-plans-cards:nth-of-type(1) .section-div-cards button {
+        font-size: 1.7rem;
+        margin: 3rem auto 0 auto;
+        width: 21.1rem;
+    }
+
+    /* Tarjeta principal */
+
+    .section-plans-cards:nth-of-type(2) .section-div-cards p:nth-of-type(1) {
+        right: 6.45rem;
+        width: 14rem;
+        height: 3.5rem;
+    }
+
+    .section-plans-cards:nth-of-type(2) .section-div-cards h2 {
+        font-size: 1.7rem;
+    }
+    
+    .section-plans-cards:nth-of-type(2) .section-div-cards p:nth-of-type(2) {
         left: 1.2rem;
-        gap: 1rem;
-        width: 7.8rem;
-        height: 6.3rem;
-        font-family: var(--font-inter);   
-        font-weight: var(--bold);
-        font-size: 5.2rem;
-        margin: 0.8rem auto 0 auto;
+        width: 9.8rem;
+        font-size: 7rem;
     }
     
-    .section-div-cards p:nth-of-type(2) > span {
-        position: absolute;
-        bottom: 3.9rem;
-        right: 8.1rem; 
-        font-size: 1.2rem;
-        font-weight: var(--normal);
-        
+    .section-plans-cards:nth-of-type(2) .section-div-cards p:nth-of-type(2) > span {
+        bottom: 2.9rem;
+        right: 10.1rem;
+        font-size: 2rem;  
     }
     
-    .section-div-cards p:nth-of-type(3) {
-        width: 15.8rem;
-        height: 3rem;
-        text-align: center;
-        margin: 0.9rem auto 0 auto;
-        font-family: var(--font-inter);
-        font-weight: normal;
-        font-size: 1.2rem;
-        color: var(--color-text-plans);
+    .section-plans-cards:nth-of-type(2) .section-div-cards p:nth-of-type(3) {
+        width: 25.8rem;
+        margin: 3rem auto 0 auto;
+        font-size: 1.7rem;
     }
     
-    .section-div-cards button {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin: 1.6rem auto 0 auto;
-        width: 15.1rem;
-        height: 4.8rem;
-        border-radius: 0.4rem;
-        border: 0.2rem solid var(--color-primary);
-        background-color: var(--color-background);
-        color: var(--color-dark-warm);
-        
+    .section-plans-cards:nth-of-type(2) .section-div-cards button {
+        font-size: 1.7rem;
+        margin: 3rem auto 0 auto;
+        width: 21.1rem;
+    }
+
+    /* Tarjeta anual de por vida */
+
+    .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(1) {
+        right: 6.45rem;
+        width: 14rem;
+        height: 3.5rem;
+    }
+
+    .section-plans-cards:nth-of-type(3) .section-div-cards h2 {
+        font-size: 1.7rem;
+    }
+    
+    .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(2) {
+        left: 1.2rem;
+        width: 9.8rem;
+        font-size: 7rem;
+    }
+    
+    .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(2) > span {
+        bottom: 2.9rem;
+        right: 11.1rem;
+        font-size: 2rem;  
+    }
+    
+    .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(3) {
+        width: 25.8rem;
+        margin: 3rem auto 0 auto;
+        font-size: 1.7rem;
+    }
+    
+    .section-plans-cards:nth-of-type(3) .section-div-cards button {
+        font-size: 1.7rem;
+        margin: 3rem auto 0 auto;
+        width: 21.1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* Sección de beneficios */
+    .section-cards-especifically {
+        width: 691px;
+    }
+
+    .section-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 0.1rem; /* Menor espaciado entre columnas */
+        row-gap: 0.1rem; /* Mantiene el espaciado entre filas */
+    }
+
+    .section-cards-efect {
+        left: 21%;
     }
 }
