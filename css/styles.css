@@ -328,7 +328,7 @@ figure:nth-of-type(2) .section-text-values {
 .section-main-orange {
     display: flex;
     height: 38.7rem;
-    background: url(./assets/images/image-orange.svg) center/cover no-repeat;
+    background: url(../assets/images/image-orange.svg) center/cover no-repeat;
 }
 
 .section-main-orange p {
