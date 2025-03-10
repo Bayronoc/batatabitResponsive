@@ -834,7 +834,9 @@ footer {
 
     /* Sección de planes */
 
-    
+    .section-cards-efect {
+        justify-content: center; /* Importante para que el scroll funcione */
+    }
 
     /* Sección de preguntas */
     
@@ -873,22 +875,4 @@ footer {
         width: 16.68rem;
         height: 11.12rem;
     }
-}
-
-/* Computador */
-
-@media screen and (min-width: 1024px) {
-    /* Sección de beneficios */
-
-    .section-cards-especifically {
-        width: 491px;
-    }
-
-    /* Sección de planes */
-
-}
-
-@media screen and (min-width: 1440px) {
-    /* Sección de beneficios */
-    
 }
