@@ -332,9 +332,11 @@ figure:nth-of-type(2) .section-text-values {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 52rem;
     overflow: hidden;
     background-color: var(--color-background);
+
 }
 
 .section-plans-text {
@@ -357,16 +359,19 @@ figure:nth-of-type(2) .section-text-values {
 }
 
 .section-cards-efect {
-    position: absolute;
-    top: 21rem;
-    left: -43%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 58.6rem;
-    height: 40.9rem;
-    margin: 0 0 6.4rem 0;
+    justify-content: flex-start; /* Importante para que el scroll funcione */
+    align-items: center;
+    width: 60rem; /* Ajustar el ancho total */
+    height: 29rem;
     gap: 0.8rem;
+    overflow-x: auto; /* Asegurar que el scroll horizontal funcione */
+    overflow-y: hidden; /* Evitar que crezca verticalmente */
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory; /* Cambiar a "mandatory" para mejor experiencia */
+    padding: 1rem 0; /* Espaciado para evitar recortes */
+    margin-top: 3rem;
 }
 
 .section-plans-cards {
@@ -375,8 +380,8 @@ figure:nth-of-type(2) .section-text-values {
     height: 24.7rem;
     border-radius: 0.8rem;
     box-shadow: 0 0.4rem 0.8rem 0 var(--color-shadow);
-    margin: 5rem auto 6.4rem auto;
     background-color: var(--color-light);
+    scroll-snap-align: center;
 }
 
 /* Tarjeta anual - normal y Tarjeta de por vida */
