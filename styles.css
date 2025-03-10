@@ -111,6 +111,7 @@ header a{
     display: flex;
     flex-direction: column;
     background-color: var(--color-background);
+    overflow: hidden;
 }
 
 .section-bitcoin {
@@ -146,6 +147,33 @@ header a{
     color: var(--color-gray);
 }
 
+.section--table-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Importante para que el scroll funcione */
+    align-items: center;
+    white-space: nowrap;
+
+    gap: 2.2rem;
+    margin: 1rem auto 1rem auto;
+    width: 90%; 
+    max-width: 100rem;
+
+    overflow-x: auto; /* Asegurar que el scroll horizontal funcione */
+    overflow-y: hidden; /* Evitar que crezca verticalmente */
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory; /* Cambiar a "mandatory" para mejor experiencia */
+}
+
+.section--table-position::-webkit-scrollbar {
+    background-color: var(--color-primary-soft);
+    height: 3px;
+}
+
+.section--table-position::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+}
+
 figure:nth-of-type(1) .table-title {
     font-weight: var(--bold);
     font-size: 1.8rem;
@@ -162,28 +190,20 @@ figure:nth-of-type(2) .table-title {
     color: var(--color-secondary);
     margin-bottom: 1.2rem;
     margin-left: 1rem;
+    margin-top: 4.8rem;
     text-align: start;
 }
 
-figure:nth-of-type(2) {
-    /* Estilos para el responsive */
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-
 .main-table {
-    position: relative;
+    scroll-snap-align: center;
     margin: 0 auto 1.6rem auto;
     font-family: var(--font-inter);
     border-radius: 0.8rem;
     background-color: var(--color-light);
     color: var(--color-text-table);
-    border-collapse: collapse;
 }
 
 .table-columns tr {
-    border-collapse: collapse;
     border-bottom: 0.1rem solid var(--color-background);
 }
 
@@ -206,15 +226,8 @@ figure:nth-of-type(2) {
     padding: 1.1rem 1.2rem;
 }
 
-.section-icon-arrow{
-    position: absolute;
-    display: inline;
-    right: 26px;
-    bottom: 14px;
-}
-
 figure:nth-of-type(1) .section-text-values {
-    margin: 1.6rem auto 6.5rem auto; 
+    margin: 1.6rem 0 6.5rem 0; 
     text-align: center;
     font-family: var(--font-inter);
     width: 11.8rem;
@@ -375,6 +388,15 @@ figure:nth-of-type(2) .section-text-values {
     overflow-y: hidden; /* Evitar que crezca verticalmente */
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory; /* Cambiar a "mandatory" para mejor experiencia */
+}
+
+.section-cards-efect::-webkit-scrollbar {
+    background-color: var(--color-primary-soft);
+    height: 3px;
+}
+
+.section-cards-efect::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
 }
 
 .section-plans-cards {
@@ -752,41 +774,9 @@ footer {
         color: var(--color-gray);
     }
 
-    figure:nth-of-type(1) .table-title {
-        margin-top: auto;
-
-    }
-
     .section--table-position {
-        display: flex;
-        flex-direction: row;
+        margin-top: 5rem;
         justify-content: center;
-        gap: 2.2rem;
-        margin: 10rem auto 4rem auto;
-    }
-    
-    figure:nth-of-type(2) {
-        /* Estilos para el responsive */
-        visibility: visible;
-        width: auto;
-        height: auto;
-    }
-
-    figure:nth-of-type(1) .section-text-values {
-        margin: 1.6rem 0 6.5rem 0; 
-        text-align: center;
-        font-family: var(--font-inter);
-        width: 11.8rem;
-        height: 3.1rem;
-        border-radius: 0.8rem;
-        padding: 0.8rem;
-        background-color: var(--color-primary-soft);
-        font-weight: 400;
-        font-size: 1.2rem;
-    }
-    
-    .section-icon-arrow{
-        display: none;
     }
 
     /* Sección de beneficios */
@@ -817,7 +807,8 @@ footer {
     }
     
     .section-cards-especifically {
-        width: 345px;
+        width: 90%;
+        font-size: 2rem;
     }
 
     /* Sección de imagen naranja */
