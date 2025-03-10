@@ -379,13 +379,9 @@ figure:nth-of-type(2) .section-text-values {
     background-color: var(--color-light);
 }
 
-/* Tarjeta anual - normal */
+/* Tarjeta anual - normal y Tarjeta de por vida */
 
-.section-plans-cards:nth-of-type(1) .section-div-cards {
-    visibility: hidden;
-}
-
-.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(1) {
+.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(1), .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(1) {
     position: absolute;
     text-align: center;
     align-content: center;
@@ -399,10 +395,9 @@ figure:nth-of-type(2) .section-text-values {
     font-size: 1.2rem;
     background-color: var(--color-primary);
     color: var(--color-light);
-    visibility: hidden;
 }
 
-.section-plans-cards:nth-of-type(1) .section-div-cards h2 {
+.section-plans-cards:nth-of-type(1) .section-div-cards h2, .section-plans-cards:nth-of-type(3) .section-div-cards h2{
     display: flex;
     justify-content: center;
     margin: 3.1rem 5.8rem 0 5.9rem;
@@ -410,7 +405,7 @@ figure:nth-of-type(2) .section-text-values {
     font-size: 1.39rem;
 }
 
-.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(2) {
+.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(2), .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(2){
     position: relative;
     left: 2.2rem;
     gap: 1rem;
@@ -423,7 +418,7 @@ figure:nth-of-type(2) .section-text-values {
     margin: 0.8rem auto 0 auto;
 }
 
-.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(2) > span {
+.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(2) > span, .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(2) > span{
     position: absolute;
     bottom: 3.9rem;
     right: 8.1rem; 
@@ -431,7 +426,7 @@ figure:nth-of-type(2) .section-text-values {
     font-weight: var(--normal);
 }
 
-.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(3) {
+.section-plans-cards:nth-of-type(1) .section-div-cards p:nth-of-type(3), .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(3){
     width: 15.8rem;
     height: 3rem;
     text-align: center;
@@ -442,7 +437,7 @@ figure:nth-of-type(2) .section-text-values {
     color: var(--color-text-plans);
 }
 
-.section-plans-cards:nth-of-type(1) .section-div-cards button {
+.section-plans-cards:nth-of-type(1) .section-div-cards button, .section-plans-cards:nth-of-type(3) .section-div-cards button{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -459,7 +454,7 @@ figure:nth-of-type(2) .section-text-values {
     
 }
 
-.section-plans-cards:nth-of-type(1) .section-div-cards button > img {
+.section-plans-cards:nth-of-type(1) .section-div-cards button > img .section-plans-cards:nth-of-type(3) .section-div-cards button > img{
     filter: invert(72%) brightness(85%) grayscale(100%);
 }
 
@@ -539,11 +534,7 @@ figure:nth-of-type(2) .section-text-values {
 
 /* Tarjeta de por vida */
 
-.section-plans-cards:nth-of-type(3) .section-div-cards {
-    visibility: hidden;
-}
-
-.section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(1) {
+/* .section-plans-cards:nth-of-type(3) .section-div-cards p:nth-of-type(1) {
     position: absolute;
     text-align: center;
     align-content: center;
@@ -557,7 +548,6 @@ figure:nth-of-type(2) .section-text-values {
     font-size: 1.2rem;
     background-color: var(--color-primary);
     color: var(--color-light);
-    visibility: hidden;
 }
 
 .section-plans-cards:nth-of-type(3) .section-div-cards h2 {
@@ -620,7 +610,7 @@ figure:nth-of-type(2) .section-text-values {
 
 .section-plans-cards:nth-of-type(3) .section-div-cards button > img {
     filter: invert(72%) brightness(85%) grayscale(100%);
-}
+} */
 
 /* Sección de preguntas */
 
@@ -921,17 +911,9 @@ footer {
     .section-plans-cards {
         margin: 0 auto;
     }
-    
-    .section-plans-cards:nth-of-type(1) .section-div-cards {
-        visibility: visible;
-    }
 
     .section-plans-cards:nth-of-type(2) .section-div-cards button {
         font-weight: var(--bold);
-    }
-
-    .section-plans-cards:nth-of-type(3) .section-div-cards {
-        visibility: visible;
     }
 
     /* Sección de preguntas */
