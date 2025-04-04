@@ -23,6 +23,6 @@ Una página web estática e informativa, totalmente responsive para todos los di
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/nombre-del-repo.git
+git clone https://github.com/Bayronoc/batatabitResponsive
 ```
 2. Abre el archivo index.html en tu navegador favorito.
